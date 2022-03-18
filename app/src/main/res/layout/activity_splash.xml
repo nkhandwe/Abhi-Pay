@@ -19,7 +19,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/TextAppName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SplashImage"
+        app:layout_constraintVertical_bias="0.108"
+        tools:layout_editor_absoluteX="10dp" />
+    <TextView
+        android:id="@+id/TextAppName2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
@@ -30,15 +45,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SplashImage"
-        tools:layout_editor_absoluteX="78dp" />
+        app:layout_constraintVertical_bias="0.108"
+        tools:layout_editor_absoluteX="0dp" />
 
     <ProgressBar
         android:id="@+id/progressBar2"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="646dp" />
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toBottomOf="@+id/TextAppName"
+        tools:layout_editor_absoluteX="16dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
